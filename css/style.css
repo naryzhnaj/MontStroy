@@ -1,0 +1,480 @@
+@font-face {
+  font-family: 'Raleway';
+  src: url('../fonts/ralewayblack.woff2') format('woff2'),
+       url('../fonts/ralewayblack.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Raleway';
+  src: url('../fonts/ralewaybold.woff2') format('woff2'),
+       url('../fonts/ralewaybold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto-font';
+  src: url('../fonts/roboto.woff2') format('woff2'),
+       url('../fonts/roboto.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Roboto-font';
+  src: url('../fonts/robotomedium.woff2') format('woff2'),
+       url('../fonts/robotomedium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Roboto-font';
+  src: url('../fonts/robotobold.woff2') format('woff2'),
+       url('../fonts/robotobold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Roboto-font';
+  src: url('../fonts/robotoblack.woff2') format('woff2'),
+       url('../fonts/robotoblack.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+}
+
+body {
+  min-width: 1200px;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  color: #000;
+  font-family: 'Roboto-font', Arial, sans-serif;
+  font-weight: 400;
+}
+
+.container {
+  position: relative;
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+}
+
+h1, h2, h4 {
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+h2 {
+  font-size: 30px;
+  line-height: 50px;
+}
+
+h4 {
+  font-size: 16px;
+  line-height: 26px;
+}
+
+a {
+  color: #000;
+  opacity: 0.77;
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 1;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.btn {
+  display: inline-block;
+  line-height: 40px;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #00ffd8;
+  color: #000;
+  padding: 2px 36px;
+}
+
+/*    header    */
+
+header {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.site-navigation a {
+  display: block;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 20px;
+  text-transform: uppercase;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+.site-navigation {
+  margin-left: 57px;
+}
+
+.site-navigation,
+.service-block,
+.slider,
+.footer-contacts ul,
+.contacts,
+.advantages ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.contacts {
+  width: 370px;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.contacts .btn:hover {
+  box-shadow: 0px 2px 4.75px 0.25px rgba(0, 255, 216, 0.6);
+}
+
+h1 {
+  font-family: 'Raleway', Arial, sans-serif;
+  font-size: 72px;
+  line-height: 90px;
+  margin-bottom: 20px;
+}
+
+/*    main    */
+
+.advantages {
+  padding-top: 100px;
+  color: white;
+  background: url("../img/welding.jpg") 50% 50% no-repeat;
+  /*background-image: linear-gradient( 90deg, rgba(13,13,13,0) 0%, rgba(13,13,13,0) 100%);*/
+}
+
+.info, .features {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.features {
+  align-items: flex-end;
+  margin-top: 100px;
+}
+
+.advantages .btn {
+  text-transform: uppercase;
+  margin-right: 20px;
+  font-size: 20px;
+  font-weight: 900;
+  padding: 8px 80px;
+}
+.advantages .btn:hover {
+  box-shadow: 0px 2px 6.3px 0.7px rgba(0, 255, 216, 0.65);
+}
+
+.advantages .btn-black {
+  border: 1px solid #00ffd8;
+  color: #fff;
+  background-color: inherit;
+  padding: 13px 50px;
+  line-height: 26px;
+}
+
+.teal {
+  color: #00ffd8;
+}
+
+.about {
+  width: 1020px;
+  margin-bottom: 45px;
+  font-size: 24px;
+  line-height: 38px;
+  font-weight: 500;
+}
+
+.block {
+  width: 175px;
+  text-align: center;
+}
+.block:first-child {
+  width: 200px;
+}
+.block:last-child {
+  width: 240px;
+}
+
+.block p {
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 400;
+  opacity: 0.6;
+}
+
+#services h2 {
+  position: relative;
+}
+
+#services h2::after {
+  position: absolute;
+  top: 50%;
+  left: 297px;
+  display: block;
+  content: "";
+  width: 871px;
+  height: 0;
+  border: solid 1px #000;
+}
+
+.service-block {
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.service-item {
+  width: 315px;
+  padding-left: 45px;
+  padding-top: 40px;
+  min-height: 505px;
+  margin-bottom: 40px;
+  box-shadow: 0px 5px 9px 1px rgba(0, 0, 0, 0.05);
+}
+
+.service-item h4 {
+  width: 270px;
+}
+
+.service-item ul {
+  list-style: none;
+  width: 270px;
+  margin: 0;
+  padding: 0;
+}
+
+.service-item li {
+  font-size: 13px;
+  line-height: 16px;
+  margin-bottom: 14px;
+}
+
+.service-item a:hover {
+  text-decoration: underline;
+}
+
+.partners h2 {
+  position: relative;
+}
+
+.partners h2::after {
+  position: absolute;
+  top: 50%;
+  left: 300px;
+  display: block;
+  content: "";
+  width: 715px;
+  height: 0;
+  border: solid 1px #000;
+}
+
+.slider {
+  justify-content: space-between;
+  margin-bottom: 128px;
+}
+
+.project-list {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+}
+
+.projects h2 {
+  position: relative;
+}
+.projects h2::after {
+  position: absolute;
+  top: 50%;
+  left: 300px;
+  display: block;
+  content: "";
+  width: 875px;
+  height: 0;
+  border: solid 1px #000;
+}
+
+.project strong {
+  margin-top: 50px;
+  margin-top: 25px;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.project p {
+  font-size: 15px;
+  line-height: 22px;
+}
+
+.btn-next {
+  display: block;
+  text-align: center;
+  vertical-align: middle;
+  width: 45px;
+  height: 32px;
+  color: #fff;
+  border: solid 2px #fff;
+}
+.btn-next:hover {
+  background-color: #00ffd8;
+}
+
+.project {
+  width: 100%;
+  height: 290px;
+  color: white;
+  background-color: brown;
+  padding: 50px 25px;
+}
+
+.project-1 {
+  background: url("../img/project1.jpg") 0 0 no-repeat;
+}
+.project-2 {
+  background: url("../img/project2.jpg") 0 0 no-repeat;
+}
+.project-3 {
+  background: url("../img/project3.jpg") 0 0 no-repeat;
+}
+.project-4 {
+  background: url("../img/project4.jpg") 0 0 no-repeat;
+}
+.project-5 {
+  background: url("../img/project5.jpg") 0 0 no-repeat;
+}
+.project-6{
+  background: url("../img/project6.jpg") 0 0 no-repeat;
+}
+
+/*    footer    */
+
+.map {
+  width: 100%;
+  height: 810px;
+  background-color: #eee;
+  background: url("../img/map.png") 0 0 no-repeat;
+}
+
+iframe {
+  width: 100%;
+  border: none;
+  border-bottom: solid 1px teal;
+}
+
+#write_us {
+  position: absolute;
+  left: 50%;
+  margin-left: -290px;
+  bottom: 130px;
+  width: 400px;
+  background-color: white;
+  color: #000;
+  padding-left: 70px;
+  padding-top: 50px;
+  padding-right: 105px;
+  padding-bottom: 35px;
+}
+
+#write_us h2 {
+  font-size: 25px;
+}
+
+#write_us label {
+  font-size: 20px;
+  line-height: 50px;
+  font-weight: 400;
+}
+
+#write_us input {
+  width: 400px;
+  border: none;
+  border-bottom: solid 1px #ddd;
+}
+
+.user-name {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#write_us .user-name input {
+  width: 180px;
+}
+
+.small {
+  width: 305px;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+  text-align: center;
+}
+
+footer {
+  position: relative;
+  height: 530px;
+  background-color: #000;
+  color: white;
+  padding-top: 57px;
+}
+
+.copyright {
+  position:absolute;
+  top: 470px;
+  left: 50%;
+  font-size: 10px;
+  line-height: 25px;
+}
+
+.coordinates {
+  width: 220px;
+}
+
+#write_us button {
+  margin-top: 34px;
+  padding: 13px 47px;
+  font-family: 'Raleway', Arial, sans-serif;
+  font-size: 25px;
+  line-height: 50px;
+  font-weight: 700;
+  background-color: #000;
+  color: white;
+}
+#write_us button:hover {
+  box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.3);
+}
