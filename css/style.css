@@ -76,6 +76,7 @@ h1, h2, h4 {
 h2 {
   font-size: 30px;
   line-height: 50px;
+  margin-bottom: 35px;
 }
 
 h4 {
@@ -110,6 +111,24 @@ img {
   padding: 2px 36px;
 }
 
+.site-navigation,
+.service-block,
+.slider,
+.footer-contacts ul,
+.contacts,
+.advantages ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.info, .features {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 /*    header    */
 
 header {
@@ -127,38 +146,34 @@ nav {
   align-items: flex-start;
 }
 
+.site-navigation {
+  justify-content: space-between;
+  margin-left: 57px;
+  margin-right: 250px;
+  width: 345px;
+}
+
 .site-navigation a {
   display: block;
   font-size: 10px;
   font-weight: 500;
   line-height: 20px;
   text-transform: uppercase;
-  margin-right: 20px;
   margin-top: 20px;
 }
-
-.site-navigation {
-  margin-left: 57px;
-}
-
-.site-navigation,
-.service-block,
-.slider,
-.footer-contacts ul,
-.contacts,
-.advantages ul {
-  list-style: none;
-  display: flex;
-  margin: 0;
-  padding: 0;
+.site-navigation a:last-child {
+  margin-right: 0;
 }
 
 .contacts {
-  width: 370px;
+  margin-top: 8px;
   align-items: center;
   justify-content: flex-end;
 }
 
+.contacts .btn {
+  margin-left: 24px;
+}
 .contacts .btn:hover {
   box-shadow: 0px 2px 4.75px 0.25px rgba(0, 255, 216, 0.6);
 }
@@ -166,28 +181,25 @@ nav {
 h1 {
   font-family: 'Raleway', Arial, sans-serif;
   font-size: 72px;
-  line-height: 90px;
-  margin-bottom: 20px;
+  line-height: 87px;
+  margin-bottom: 15px;
 }
 
 /*    main    */
 
 .advantages {
   padding-top: 100px;
+  padding-bottom: 64px;
+  margin-bottom: 94px;
   color: white;
-  background: url("../img/welding.jpg") 50% 50% no-repeat;
-  /*background-image: linear-gradient( 90deg, rgba(13,13,13,0) 0%, rgba(13,13,13,0) 100%);*/
-}
-
-.info, .features {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  background-color: #141414;
+  background: url("../img/welding.jpg") 50% 50% no-repeat,
+              linear-gradient( 90deg, rgba(13,13,13,0) 0%, rgba(13,13,13,0) 100%);
 }
 
 .features {
   align-items: flex-end;
-  margin-top: 100px;
+  margin-top: 113px;
 }
 
 .advantages .btn {
@@ -205,7 +217,7 @@ h1 {
   border: 1px solid #00ffd8;
   color: #fff;
   background-color: inherit;
-  padding: 13px 50px;
+  padding: 14px 51px;
   line-height: 26px;
 }
 
@@ -215,7 +227,7 @@ h1 {
 
 .about {
   width: 1020px;
-  margin-bottom: 45px;
+  margin-bottom: 53px;
   font-size: 24px;
   line-height: 38px;
   font-weight: 500;
@@ -225,11 +237,9 @@ h1 {
   width: 175px;
   text-align: center;
 }
-.block:first-child {
-  width: 200px;
-}
-.block:last-child {
-  width: 240px;
+
+.block img {
+  margin-bottom: 8px;
 }
 
 .block p {
@@ -237,6 +247,12 @@ h1 {
   line-height: 20px;
   font-weight: 400;
   opacity: 0.6;
+}
+.block:first-child {
+  width: 200px;
+}
+.block:last-child {
+  width: 240px;
 }
 
 #services h2 {
@@ -307,11 +323,15 @@ h1 {
 .slider {
   justify-content: space-between;
   margin-bottom: 128px;
+  filter: grayscale(100%);
+  opacity: 0.5;
 }
 
 .project-list {
+  width: 584px;
   display: flex;
   flex-direction: row;
+  align-content: space-between;
   margin: 0;
   padding: 0;
 }
@@ -346,8 +366,8 @@ h1 {
   display: block;
   text-align: center;
   vertical-align: middle;
-  width: 45px;
-  height: 32px;
+  width: 42px;
+  height: 30px;
   color: #fff;
   border: solid 2px #fff;
 }
@@ -394,7 +414,7 @@ h1 {
 iframe {
   width: 100%;
   border: none;
-  border-bottom: solid 1px teal;
+  border-bottom: solid 1px #00ffd8;
 }
 
 #write_us {
@@ -457,6 +477,7 @@ footer {
   position:absolute;
   top: 470px;
   left: 50%;
+  margin-left: -150px;
   font-size: 10px;
   line-height: 25px;
 }
