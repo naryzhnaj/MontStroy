@@ -97,11 +97,8 @@ img {
 /*           HEADER          */
 
 .main-header {
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 20px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 19px;
+  padding-bottom: 19px;
 }
 
 .top-menu {
@@ -149,6 +146,13 @@ img {
   justify-content: flex-end;
 }
 
+.contacts li:first-child a {
+  color: #000;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
 .contacts .btn {
   margin-left: 24px;
 }
@@ -160,12 +164,11 @@ img {
 
 .advantages {
   padding-top: 100px;
-  padding-bottom: 64px;
-  margin-bottom: 98px;
+  padding-bottom: 80px;
+  margin-bottom: 110px;
   color: #fff;
   background-color: #141414;
-  background: url("../img/welding.jpg") 45% 45% no-repeat,
-              linear-gradient( 90deg, rgba(13,13,13,0) 0%, rgba(13,13,13,0) 100%) 45% 45% no-repeat;
+  background: url("../img/welding.jpg") 50% 50% no-repeat;
 }
 
 .advantages h1 {
@@ -176,16 +179,19 @@ img {
   margin-bottom: 15px;
 }
 
-.advantages ul, .features {
+.contact-buttons, .features {
   list-style: none;
   display: flex;
   margin: 0;
   padding: 0;
 }
 
+.contact-buttons {
+  margin-bottom: 205px;
+}
+
 .features {
   justify-content: space-between;
-  margin-top: 113px;
 }
 
 .advantages .btn {
@@ -220,7 +226,6 @@ img {
 }
 
 .block {
-  width: 175px;
   text-align: center;
   font-size: 15px;
   line-height: 20px;
@@ -230,10 +235,50 @@ img {
 
 .block:first-child {
   width: 200px;
+  position: relative;
+}
+
+.block:first-child::before {
+  position: absolute;
+  top: -90px;
+  left: 65px;
+  display: block;
+  content: "";
+  background: url("../img/like.png") no-repeat 0 0;
+  width: 62px;
+  height: 64px;
+}
+
+.block:nth-child(2) {
+  width: 175px;
+  position: relative;
+}
+
+.block:nth-child(2):before {
+  position: absolute;
+  top: -75px;
+  left: 60px;
+  display: block;
+  content: "";
+  background: url("../img/handshake.png") no-repeat 0 0;
+  width: 74px;
+  height: 49px;
 }
 
 .block:last-child {
   width: 240px;
+  position: relative;
+}
+
+.block:last-child::before {
+  position: absolute;
+  top: -100px;
+  left: 95px;
+  display: block;
+  content: "";
+  background: url("../img/settings.png") no-repeat 0 0;
+  width: 70px;
+  height: 69px;
 }
 
 /*         SERVICES           */
@@ -242,6 +287,9 @@ img {
   position: relative;
   font-size: 30px;
   line-height: 50px;
+  letter-spacing: 1px;
+  margin: 0;
+  margin-bottom: 25px;
 }
 
 .services h2::after {
@@ -261,16 +309,18 @@ img {
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 0;
+  margin-bottom: 30px;
   padding: 0;
 }
 
 .service-item {
-  width: 270px;
+  width: 275px;
   box-sizing: padding-box;
+  margin-bottom: 40px;
   padding-left: 40px;
-  padding-left: 45px;
-  padding-top: 25px;
-  min-height: 505px;
+  padding-right: 45px;
+  padding-top: 38px;
+  min-height: 470px;
   box-shadow: 0px 5px 9px 1px rgba(0, 0, 0, 0.05);
 }
 
@@ -289,7 +339,12 @@ img {
 .service-item li {
   font-size: 13px;
   line-height: 16px;
+  opacity: 0.77;
   margin-bottom: 14px;
+}
+
+.service-item a {
+  color: #000;
 }
 
 .service-item a:hover {
@@ -302,6 +357,7 @@ img {
   position: relative;
   font-size: 30px;
   line-height: 50px;
+  letter-spacing: 1px;
   margin-bottom: 35px;
 }
 
@@ -333,6 +389,7 @@ img {
   position: relative;
   font-size: 30px;
   line-height: 50px;
+  letter-spacing: 1px;
 }
 .projects h2::after {
   position: absolute;
@@ -347,6 +404,8 @@ img {
 
 .project-list {
   display: flex;
+  /*flex-flow: row wrap;
+  align-content: flex-start;*/
   margin: 0;
   padding: 0;
 }
@@ -374,7 +433,6 @@ img {
 .btn-next {
   display: block;
   text-align: center;
-  padding: 12px;
   width: 42px;
   height: 30px;
   color: #fff;
@@ -382,6 +440,7 @@ img {
 }
 .btn-next:hover {
   background-color: #00ffd8;
+  border-color: #00ffd8;
 }
 
 .project-1 {
