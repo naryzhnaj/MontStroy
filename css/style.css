@@ -165,7 +165,7 @@ img {
 .advantages {
   padding-top: 100px;
   padding-bottom: 80px;
-  margin-bottom: 110px;
+  margin-bottom: 100px;
   color: #fff;
   background-color: #141414;
   background: url("../img/welding.jpg") 50% 50% no-repeat;
@@ -289,7 +289,7 @@ img {
   line-height: 50px;
   letter-spacing: 1px;
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 .services h2::after {
@@ -319,12 +319,13 @@ img {
   margin-bottom: 40px;
   padding-left: 40px;
   padding-right: 45px;
-  padding-top: 38px;
+  padding-top: 30px;
   min-height: 470px;
   box-shadow: 0px 5px 9px 1px rgba(0, 0, 0, 0.05);
 }
 
 .service-item h4 {
+  margin: 0;
   margin-bottom: 20px;
   font-size: 16px;
   line-height: 26px;
@@ -404,8 +405,9 @@ img {
 
 .project-list {
   display: flex;
-  /*flex-flow: row wrap;
-  align-content: flex-start;*/
+  /*flex-flow: row wrap;*/
+  align-items: flex-start;
+  align-content: flex-start;
   margin: 0;
   padding: 0;
 }
@@ -420,7 +422,7 @@ img {
 
 .project strong {
   margin-top: 50px;
-  margin-top: 25px;
+  margin-bottom: 25px;
   font-size: 24px;
   line-height: 24px;
 }
