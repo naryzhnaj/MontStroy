@@ -7,18 +7,18 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header>
-      <nav class="container">
-        <img src="img/logo.png" width="141" height="60" alt="Логотип MontStroy">
+    <header class="main-header">
+      <nav class="container top-menu">
+        <a><img src="img/logo.png" width="141" height="60" alt="Логотип MontStroy"></a>
         <ul class="site-navigation">
-          <li><a href="#">главная</a></li>
+          <li><a>главная</a></li>
           <li><a href="#">услуги</a></li>
           <li><a href="#">проекты</a></li>
           <li><a href="#">партнеры</a></li>
           <li><a href="#">контакты</a></li>
         </ul>
         <ul class="contacts">
-          <li>+7 (495) 452-67-23</li>
+          <li><a href="tel:+74954526723">+7 (495) 452-67-23</a></li>
           <li><a class="btn" href="#write_us">Обратная связь</a></li>
         </ul>
       </nav>
@@ -30,32 +30,29 @@
           <h1>строительно-монтажные работы</h1>
           <p class="about">Компания ЗАО «НCП «МонтCтрой» успешно работает на российском рынке с <span class="teal">1992</span> года,
             и за это время зарекомендовала себя как ведущий разработчик качественных систем установок для предприятий, выполняет
-            полный комплекс строительно-монтажных и пуско-наладочных работ по электроснабжению зданий и сооружений.
+            полный комплекс строительно-монтажных и&nbsp;пуско-наладочных работ по электроснабжению зданий и сооружений.
           </p>
-          <ul>
+          <ul class="contact-buttons">
             <li><a class="btn" href="#services">наши услуги</a></li>
             <li><a class="btn btn-black" href="#write_us">связаться с нами</a></li>
           </ul>
 
-          <div class="features">
-            <div class="block">
-              <img src="img/like.png" width="62" height="64" alt="like">
-              <p>Гарантированное высокое качество продукции</p>
-            </div>
-            <div class="block">
-              <img src="img/handshake.png" width="74" height="49" alt="handshake">
-              <p>Исполнение всех сроков и обязательств</p>
-            </div>
-            <div class="block">
-              <img src="img/settings.png" width="70" height="69" alt="settings">
-              <p>Собственная производственная база</p>
-            </div>
-          </div>
+          <ul class="features">
+            <li class="block">
+              Гарантированное высокое качество продукции
+            </li>
+            <li class="block">
+              Исполнение всех сроков и обязательств
+            </li>
+            <li class="block">
+              Собственная производственная база
+            </li>
+          </ul>
         </div>
       </section>
 
       <div class="container">
-        <section id="services">
+        <section id="services" class="services">
           <h2>услуги</h2>
           <ul class="service-block">
             <li>
@@ -191,6 +188,9 @@
 
         <section class="partners">
           <h2>партнеры</h2>
+          <div>
+            <button>&#8592;</button>|<button>&#8594;</button>
+          </div>
           <ul class="slider">
             <li><img src="img/promo1.png" alt="partner1" width="270" height="135"></li>
             <li><img src="img/promo2.png" alt="partner2" width="270" height="135"></li>
@@ -205,8 +205,8 @@
         <iframe src="https://yandex.ru/map-widget/v1/-/CCfj62zK" height="810"></iframe>
       </section>
     </main>
-    <footer>
-      <section id="write_us">
+    <footer class="main-footer">
+      <section id="write_us" class="feedback">
         <h2>свяжитесь с нами</h2>
         <form class="feedback-form">
           <div class="user-name">
@@ -257,9 +257,9 @@
                         <image id="фейсбук_лого" data-name="фейсбук лого" width="14" height="26" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAaCAYAAACHD21cAAABG0lEQVQ4je2UsUoDQRCGvxM1TQpRxM7Cyl4bQcGX8AFsbirBBxAs7NIIdvMUeQDRRrC1sLeSiKCFGIKJ0ZPlLnI7s0fEwsoPDm5n/w92h7nLiqIghYisA/vALrAGtIAQzoCXpCgiR8CJ26jhRBE5BE5dMuY1EkVkCXhysQSzprTtI9/0gMdq0bdiEzfAlqoOJ/szJthvEG/rUkrsOaXEtT7L83wDWAA+gU2g4zS4Ao4nDvAe7ngNzLtozA5waY86cLHpjII4/IX4EMQVV57OINzxAlitmrMILCe0N+C5akx4zu3IHQBnToMusFe9Z6o6tpMzdkrJSFU/6gU7AC2nlMzZghV/zL/4F2K7IRe+1wg7Offh15cQ76IV8AUdI0Ze7KukRwAAAABJRU5ErkJggg=="/>
                       </svg></a></li>
                 <li><a class="social-button" href="#">
-                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="27" height="22" viewBox="0 0 27 22">
-                    <image id="твиттер_лого" data-name="твиттер лого" width="27" height="22" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAWCAYAAAAxSueLAAAB7ElEQVRIibXVT4hOYRTH8c8wC4yFwkqKsDJZKflTsrJAlAUr5d+MbNkMiZUwUUpNJ2WFZGUhrGSSlX81sxFDZMPCQoPyX0+em9e97x3vzGu+dbtvzznP+d1znvOep6Onp0cbzMIBbMZ8jGIQ/RExVITt7e1di6FCbBPm4sI4dLtxI4uU+YE+dGALvkfEmkLsKrZiBy5VtlaZiWEsqFiqvMVqdE3JpiVIvy/iKKZWtvzNvhaFEs9xO1WiEBttMB7LdV9W2faHDZWVelbhTERcLsQel1xT2o9wJTt3lOzzakNX2RsRZ+XSJSIfaiOplNtwD69wHumA1+NzJWQ9w4WlEHuPw7Xuv9t6T/6oW7kTW+VD4deZ3zfxCe8wexyBWuFlObP7WDEJQiMR8bEsdq7Jmf0PBhtjNHbjkUkQu9ZMLHEcO/GmsmVivM7N1FRM7rI7uVna5XREfBtL7AW2Y0abQiMYKC+WxQbyfGyH1Gi7IuLLv8R+5sm/P0+NidAXEXeb7SuLFYIpw4U4WbGOTbo0T9V5dFZWmJZv3oNYXrE2J33goYg40dTaILYxT/Y5WISVmF7xrOcZdteVrpFUxutIjouxbhxCT/PZdrciVGSWSIM4Pen2LTJdmrPtwtc8pJ/gYf6zPkjli0gXQQvgFyTAcrWwMJjSAAAAAElFTkSuQmCC"/>
-                    </svg></a></li>
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="27" height="22" viewBox="0 0 27 22">
+                        <image id="твиттер_лого" data-name="твиттер лого" width="27" height="22" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAWCAYAAAAxSueLAAAB7ElEQVRIibXVT4hOYRTH8c8wC4yFwkqKsDJZKflTsrJAlAUr5d+MbNkMiZUwUUpNJ2WFZGUhrGSSlX81sxFDZMPCQoPyX0+em9e97x3vzGu+dbtvzznP+d1znvOep6Onp0cbzMIBbMZ8jGIQ/RExVITt7e1di6FCbBPm4sI4dLtxI4uU+YE+dGALvkfEmkLsKrZiBy5VtlaZiWEsqFiqvMVqdE3JpiVIvy/iKKZWtvzNvhaFEs9xO1WiEBttMB7LdV9W2faHDZWVelbhTERcLsQel1xT2o9wJTt3lOzzakNX2RsRZ+XSJSIfaiOplNtwD69wHumA1+NzJWQ9w4WlEHuPw7Xuv9t6T/6oW7kTW+VD4deZ3zfxCe8wexyBWuFlObP7WDEJQiMR8bEsdq7Jmf0PBhtjNHbjkUkQu9ZMLHEcO/GmsmVivM7N1FRM7rI7uVna5XREfBtL7AW2Y0abQiMYKC+WxQbyfGyH1Gi7IuLLv8R+5sm/P0+NidAXEXeb7SuLFYIpw4U4WbGOTbo0T9V5dFZWmJZv3oNYXrE2J33goYg40dTaILYxT/Y5WISVmF7xrOcZdteVrpFUxutIjouxbhxCT/PZdrciVGSWSIM4Pen2LTJdmrPtwtc8pJ/gYf6zPkjli0gXQQvgFyTAcrWwMJjSAAAAAElFTkSuQmCC"/>
+                      </svg></a></li>
               </ul>
             </div>
 
@@ -270,7 +270,7 @@
               Ежедневно с 9:00 до 18:00
             </div>
         </section>
-        <p class="small">1992-2018 © ЗАО “НСП ”МонтСтрой”. Все права защищены</p>
+        <p class="copyright">1992-2018 © ЗАО “НСП ”МонтСтрой”. Все права защищены</p>
       </div>
     </footer>
   </body>
