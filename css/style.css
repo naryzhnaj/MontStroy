@@ -290,7 +290,7 @@ img {
 /*         SERVICES           */
 
 .services {
-  margin-bottom: 62px;
+  margin-bottom: 63px;
 }
 
 .services h2 {
@@ -403,22 +403,12 @@ img {
   padding: 0;
 }
 
-.project-col1 {
-  width: 290px;
-}
-
-.project-col2 {
-  width: 583px;
-}
-
 .project {
   position: relative;
   height: 290px;
   color: #fff;
   background-color: brown;
-  padding-top: 53px;
-  padding-left: 32px;
-  padding-right: 10px;
+  padding-left: 29px;
   box-sizing: border-box;
   margin-bottom: 3px;
 }
@@ -435,6 +425,7 @@ img {
 .project p {
   font-size: 15px;
   line-height: 22px;
+  opacity: 0.6;
 }
 
 .btn-arrow {
@@ -445,12 +436,30 @@ img {
   padding: 6px 13px;
   color: #fff;
   font-weight: 900;
+  opacity: 0.34;
   border: solid 2px #fff;
 }
 .btn-arrow:hover {
   color: #000;
   background-color: #00ffd8;
   border-color: #00ffd8;
+}
+
+.project-col1 {
+  width: 290px;
+  padding-top: 53px;
+  padding-right: 15px;
+}
+
+.project-col2 {
+  width: 583px;
+  padding-top: 43px;
+  padding-right: 80px;
+}
+
+.project-col2 strong {
+  font-size: 32px;
+  line-height: 42px;
 }
 
 .project-1 {
@@ -502,20 +511,27 @@ img {
   position: absolute;
   top: 6px;
   right: 0;
-  box-sizing: border-box;
-  border: solid 2px #000;
+  display: flex;
+  align-items: center;
+  border: solid 2px #292929;
 }
 
 .slider-buttons button {
-  width: 60px;
+  width: 55px;
   height: 30px;
   border: none;
   background-color: #fff;
-  font-weight: 900;
 }
 
 .slider-buttons button:hover {
   background-color: #00ffd8;
+  opacity: 0.3;
+}
+
+.dash {
+  width: 0;
+  height: 8px;
+  border: solid 1px #292929;
 }
 
 .slider {
