@@ -295,9 +295,10 @@ img {
 
 .services h2 {
   position: relative;
+  font-family: 'Raleway', Arial, sans-serif;
   font-size: 30px;
   line-height: 50px;
-  letter-spacing: 1px;
+  letter-spacing: 1.2px;
   margin: 0;
   margin-bottom: 20px;
 }
@@ -375,9 +376,10 @@ img {
 
 .projects h2 {
   position: relative;
+  font-family: 'Raleway', Arial, sans-serif;
   font-size: 30px;
   line-height: 50px;
-  letter-spacing: 1px;
+  letter-spacing: 1.2px;
   margin: 0;
   margin-bottom: 34px;
 }
@@ -489,9 +491,10 @@ img {
 
 .partners h2 {
   position: relative;
+  font-family: 'Raleway', Arial, sans-serif;
   font-size: 30px;
   line-height: 50px;
-  letter-spacing: 1px;
+  letter-spacing: 1.2px;
   margin: 0;
   margin-bottom: 40px;
 }
@@ -583,8 +586,10 @@ img {
 }
 
 .feedback h2 {
+  font-family: 'Raleway', Arial, sans-serif;
   font-size: 25px;
   line-height: 50px;
+  letter-spacing: 1px;
 }
 
 .feedback label {
@@ -644,6 +649,10 @@ img {
   padding: 0;
 }
 
+.social-button {
+  margin-right: 30px;
+}
+
 .coordinates {
   width: 220px;
 }
@@ -655,4 +664,6 @@ img {
   margin-left: -150px;
   font-size: 10px;
   line-height: 25px;
+  opacity: 0.25;
+  letter-spacing: 0.4px;
 }
