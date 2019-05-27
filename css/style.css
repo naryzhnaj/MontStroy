@@ -68,7 +68,7 @@ body {
   padding: 0;
 }
 
-h1, h2, h4 {
+h1, h2 {
   text-transform: uppercase;
   font-weight: 900;
 }
@@ -289,11 +289,16 @@ img {
 
 /*         SERVICES           */
 
+.services {
+  margin-bottom: 63px;
+}
+
 .services h2 {
   position: relative;
+  font-family: 'Raleway', Arial, sans-serif;
   font-size: 30px;
   line-height: 50px;
-  letter-spacing: 1px;
+  letter-spacing: 1.2px;
   margin: 0;
   margin-bottom: 20px;
 }
@@ -315,7 +320,6 @@ img {
   flex-wrap: wrap;
   justify-content: flex-start;
   margin: 0;
-  margin-bottom: 30px;
   padding: 0;
 }
 
@@ -331,11 +335,14 @@ img {
   padding-left: 40px;
   padding-right: 45px;
   padding-top: 30px;
-  min-height: 470px;
+  padding-bottom: 40px;
+  min-height: 430px;
   box-shadow: 0px 5px 9px 1px rgba(0, 0, 0, 0.05);
 }
 
-.service-item h4 {
+.service-item h3 {
+  text-transform: uppercase;
+  font-weight: 900;
   margin: 0;
   margin-bottom: 20px;
   font-size: 16px;
@@ -365,11 +372,16 @@ img {
 
 /*          PROJECTS          */
 
+.projects {
+  margin-bottom: 110px;
+}
+
 .projects h2 {
   position: relative;
+  font-family: 'Raleway', Arial, sans-serif;
   font-size: 30px;
   line-height: 50px;
-  letter-spacing: 1px;
+  letter-spacing: 1.2px;
   margin: 0;
   margin-bottom: 34px;
 }
@@ -388,57 +400,75 @@ img {
 .project-list {
   display: flex;
   flex-flow: row wrap;
-  align-items: flex-start;
+  align-items: stretch;
   justify-content: space-between;
-  align-content: flex-start;
+  align-content: stretch;
+  list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.project-col1 {
-  width: 290px;
-}
-
-.project-col2 {
-  width: 583px;
-}
-
 .project {
   position: relative;
-  height: 290px;
+  min-height: 290px;
   color: #fff;
   background-color: brown;
-  padding: 50px 25px;
+  padding-left: 29px;
+  padding-bottom: 37px;
+  background-size: cover;
   box-sizing: border-box;
   margin-bottom: 3px;
 }
 
-.project strong {
-  margin-bottom: 25px;
+.project h3 {
   font-size: 24px;
   font-weight: 700;
   line-height: 24px;
+  margin: 0;
+  margin-bottom: 20px;
+  min-height: 19px;
 }
 
 .project p {
   font-size: 15px;
   line-height: 22px;
+  opacity: 0.6;
 }
 
 .btn-arrow {
   position: absolute;
-  bottom: 16px;
-  right: 16px;
+  bottom: 11px;
+  right: 9px;
   display: inline-block;
   padding: 6px 13px;
   color: #fff;
-  font-weight: 500;
+  font-weight: 900;
+  opacity: 0.34;
   border: solid 2px #fff;
 }
 .btn-arrow:hover {
   color: #000;
   background-color: #00ffd8;
   border-color: #00ffd8;
+  opacity: 1;
+}
+
+.project-col1 {
+  width: 290px;
+  padding-top: 53px;
+  padding-right: 15px;
+}
+
+.project-col2 {
+  width: 583px;
+  padding-top: 43px;
+  padding-right: 80px;
+}
+
+.project-col2 h3 {
+  font-size: 32px;
+  line-height: 42px;
+  min-height: 30px;
 }
 
 .project-1 {
@@ -468,10 +498,12 @@ img {
 
 .partners h2 {
   position: relative;
+  font-family: 'Raleway', Arial, sans-serif;
   font-size: 30px;
   line-height: 50px;
-  letter-spacing: 1px;
-  margin-bottom: 35px;
+  letter-spacing: 1.2px;
+  margin: 0;
+  margin-bottom: 40px;
 }
 
 .partners h2::after {
@@ -487,14 +519,38 @@ img {
 
 .slider-buttons {
   position: absolute;
-  top: 20px;
-  right: 70px;
-  border: solid 1px #000;
+  top: 6px;
+  right: 0;
+  display: flex;
+  align-items: center;
+  border: solid 2px #292929;
 }
 
 .slider-buttons button {
+  width: 55px;
+  height: 30px;
   border: none;
+  background-color: #fff;
+  cursor: pointer;
 }
+
+.slider-buttons button:hover {
+  background-color: rgba(0, 255, 216, 0.3);
+}
+
+.prev {
+  position: relative;
+}
+.prev::after {
+  position: absolute;
+  left: 55px;
+  top: 11px;
+  content: "";
+  width: 0;
+  height: 8px;
+  border: solid 1px #292929;
+}
+
 .slider {
   list-style: none;
   display: flex;
@@ -502,8 +558,13 @@ img {
   padding: 0;
   justify-content: space-between;
   margin-bottom: 128px;
-  filter: grayscale(100%);
+}
+
+.slider li {
   opacity: 0.5;
+}
+.slider li:hover {
+  opacity: 1;
 }
 
 /*         FOOTER         */
@@ -544,8 +605,10 @@ img {
 }
 
 .feedback h2 {
+  font-family: 'Raleway', Arial, sans-serif;
   font-size: 25px;
   line-height: 50px;
+  letter-spacing: 1px;
 }
 
 .feedback label {
@@ -562,7 +625,7 @@ img {
 
 .feedback button {
   margin-top: 34px;
-  padding: 13px 47px;
+  padding: 19px 47px;
   font-family: 'Raleway', Arial, sans-serif;
   font-size: 25px;
   line-height: 50px;
@@ -605,6 +668,10 @@ img {
   padding: 0;
 }
 
+.social-button {
+  margin-right: 30px;
+}
+
 .coordinates {
   width: 220px;
 }
@@ -616,4 +683,6 @@ img {
   margin-left: -150px;
   font-size: 10px;
   line-height: 25px;
+  opacity: 0.25;
+  letter-spacing: 0.4px;
 }
