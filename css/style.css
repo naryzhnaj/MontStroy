@@ -584,11 +584,10 @@ img {
 
 .main-footer {
   position: relative;
-  height: 532px;
+  height: 465px;
   background-color: #000;
   color: #fff;
   padding-top: 67px;
-  box-sizing: padding-box;
 }
 
 .feedback {
@@ -597,16 +596,15 @@ img {
   margin-left: -290px;
   bottom: 134px;
   width: 580px;
-  min-height: 580px;
   background-color: #fff;
   color: #000;
-  box-sizing: padding-box;
   padding-top: 23px;
   padding-bottom: 38px;
 }
 
 .feedback h2 {
   margin-left: 150px;
+  margin-bottom: 40px;
   font-family: 'Raleway', Arial, sans-serif;
   font-size: 25px;
   line-height: 50px;
@@ -620,13 +618,14 @@ img {
 
 .feedback-form label {
   font-size: 20px;
-  line-height: 50px;
+  line-height: 28px;
   font-weight: 400;
-  margin: 0;
+  letter-spacing: 0.8px;
 }
 
 .feedback-form input {
   width: 400px;
+  margin-bottom: 50px;
   border: none;
   border-bottom: solid 1px #000;
   opacity: 0.5;
@@ -639,7 +638,6 @@ img {
 
 .user-name {
   width: 400px;
-  height: 100px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -648,13 +646,13 @@ img {
 .user-name label {
   width: 180px;
 }
-
+ 
 .user-name input {
   width: 180px;
+  margin-bottom: 43px;
 }
 
 .feedback-form button {
-  margin-top: 34px;
   margin-left: 100px;
   padding: 5px 47px;
   border: none;
@@ -672,7 +670,10 @@ img {
 
 .feedback-form .small {
   width: 300px;
-  margin-left: 40px;
+  margin: 0;
+  margin-top: -20px;
+  margin-left: 68px;
+  margin-bottom: 32px;
   font-size: 12px;
   line-height: 18px;
   font-weight: 400;
@@ -794,8 +795,9 @@ img {
 
 .copyright {
   position:absolute;
-  top: 470px;
+  bottom: 40px;
   left: 50%;
+  margin: 0;
   margin-left: -150px;
   font-size: 10px;
   line-height: 25px;
