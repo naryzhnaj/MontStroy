@@ -414,7 +414,7 @@ img {
   color: #fff;
   background-color: brown;
   padding-left: 29px;
-  padding-bottom: 37px;
+  padding-bottom: 20px;
   box-sizing: border-box;
   margin-bottom: 3px;
   background-size: cover;
@@ -572,7 +572,7 @@ img {
 
 .map {
   width: 100%;
-  height: 810px;
+  height: 807px;
   background-color: #eee;
   background: url("../img/map.png") 0 0 no-repeat;
 }
@@ -580,50 +580,52 @@ img {
 .map iframe {
   width: 100%;
   border: none;
-  border-bottom: solid 1px #00ffd8;
 }
 
 .main-footer {
   position: relative;
-  height: 530px;
+  height: 532px;
   background-color: #000;
   color: #fff;
-  padding-top: 57px;
+  padding-top: 67px;
+  box-sizing: padding-box;
 }
 
 .feedback {
   position: absolute;
   left: 50%;
   margin-left: -290px;
-  bottom: 130px;
-  width: 400px;
+  bottom: 134px;
+  width: 580px;
+  min-height: 580px;
   background-color: #fff;
   color: #000;
-  padding-left: 70px;
-  padding-top: 50px;
-  padding-right: 105px;
-  padding-bottom: 35px;
-  text-align: center;
-}
-
-.feedback p {
-  text-align: left;
+  box-sizing: padding-box;
+  padding-top: 23px;
+  padding-bottom: 38px;
 }
 
 .feedback h2 {
+  margin-left: 150px;
   font-family: 'Raleway', Arial, sans-serif;
   font-size: 25px;
   line-height: 50px;
   letter-spacing: 1px;
 }
 
-.feedback label {
+.feedback-form {
+  margin-left: 73px;
+  width: 400px;
+}
+
+.feedback-form label {
   font-size: 20px;
   line-height: 50px;
   font-weight: 400;
+  margin: 0;
 }
 
-.feedback input {
+.feedback-form input {
   width: 400px;
   border: none;
   border-bottom: solid 1px #000;
@@ -631,37 +633,46 @@ img {
   outline: none;
 }
 
-.feedback input:focus, .feedback input:hover {
+.feedback-form input:focus, .feedback-form input:hover {
   opacity: 1;
 }
 
 .user-name {
+  width: 400px;
+  height: 100px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.user-name label {
+  width: 180px;
 }
 
 .user-name input {
   width: 180px;
 }
 
-.feedback button {
+.feedback-form button {
   margin-top: 34px;
+  margin-left: 100px;
   padding: 5px 47px;
   border: none;
   font-family: 'Raleway', Arial, sans-serif;
   font-size: 25px;
   line-height: 50px;
+  letter-spacing: 1px;
   font-weight: 700;
   background-color: #000;
   color: #fff;
 }
-.feedback button:hover {
+.feedback-form button:hover {
   box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.3);
 }
 
-.small {
+.feedback-form .small {
   width: 300px;
+  margin-left: 40px;
   font-size: 12px;
   line-height: 18px;
   font-weight: 400;
@@ -669,36 +680,64 @@ img {
   text-align: center;
 }
 
+.confidentiality {
+  border-bottom: dotted 1px;
+  color: #000;
+}
+
 .info {
   display: flex;
   flex-direction: row;
+  align-items: flex-start;
   justify-content: space-between;
   font-size: 16px;
   line-height: 38px;
 }
 
-.footer-contacts ul {
+.footer-contacts img {
+  margin-bottom: 20px;
+}
+
+.social-buttons {
   list-style: none;
   display: flex;
   margin: 0;
   padding: 0;
+  margin-top: 53px;
 }
 
-.social-button {
+.social-buttons li {
+  display: block;
   margin-right: 30px;
   opacity: 0.5;
 }
-.social-button:hover {
+.social-buttons li:hover {
   opacity: 1;
 }
 
-.coordinates {
-  width: 220px;
-  font-size: 13px;
-  line-height: 45px;
+.social-buttons li:first-child {
+  width: 35px;
+  height: 21px;
+  background: url("../img/vk.png") 0 0 no-repeat;
 }
 
-.coordinates p {
+.social-buttons li:nth-child(2) {
+  width: 27px;
+  height: 22px;
+  background: url("../img/tw.png") 0 0 no-repeat;
+}
+
+.social-buttons li:last-child {
+  width: 14px;
+  height: 26px;
+  background: url("../img/fb.png") 0 0 no-repeat;
+}
+
+.coordinates {
+  width: 180px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
   font-size: 16px;
   line-height: 26px;
 }
@@ -720,6 +759,7 @@ img {
 .phone {
   position: relative;
   font-weight: 700;
+  margin-bottom: -15px;
 }
 .phone::before {
   position: absolute;
@@ -745,6 +785,11 @@ img {
   width: 16px;
   height: 11px;
   background: url("../img/letter.svg") no-repeat 0 0;
+}
+
+.hours {
+  font-size: 13px;
+  line-height: 45px;
 }
 
 .copyright {
