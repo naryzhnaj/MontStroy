@@ -100,6 +100,7 @@ img {
   background-color: #00ffd8;
   color: #000;
   padding: 2px 36px;
+  outline: none;
 }
 
 /*           HEADER          */
@@ -167,7 +168,8 @@ img {
   margin-left: 24px;
 }
 
-.contacts .btn:hover {
+.contacts .btn:hover,
+.contacts .btn:focus {
   box-shadow: 0px 2px 4.75px 0.25px rgba(0, 255, 216, 0.6);
 }
 
@@ -219,7 +221,8 @@ img {
   padding: 8px 80px;
 }
 
-.contact-buttons .btn:hover {
+.contact-buttons .btn:hover,
+.contact-buttons .btn:focus {
   box-shadow: 0px 2px 6.3px 0.7px rgba(0, 255, 216, 0.65);
 }
 
@@ -454,9 +457,11 @@ img {
   font-weight: 900;
   opacity: 0.34;
   border: solid 2px #fff;
+  outline: none;
 }
 
-.btn-arrow:hover {
+.btn-arrow:hover,
+.btn-arrow:focus {
   color: #000;
   background-color: #00ffd8;
   border-color: #00ffd8;
@@ -547,9 +552,11 @@ img {
   border: none;
   background-color: #fff;
   cursor: pointer;
+  outline: none;
 }
 
-.slider-buttons button:hover {
+.slider-buttons button:hover,
+.slider-buttons button:focus {
   background-color: rgba(0, 255, 216, 0.3);
 }
 
@@ -642,17 +649,14 @@ img {
 
 .feedback-form input {
   width: 400px;
-  margin-bottom: 50px;
+  margin-bottom: 47px;
   border: none;
   border-bottom: solid 1px #000;
   opacity: 0.5;
   outline: none;
 }
 
-.feedback-form input:focus {
-  opacity: 1;
-} 
-
+.feedback-form input:focus,
 .feedback-form input:hover {
   opacity: 1;
 }
@@ -667,7 +671,7 @@ img {
 .user-name label {
   width: 180px;
 }
- 
+
 .user-name input {
   width: 180px;
   margin-bottom: 43px;
@@ -687,7 +691,8 @@ img {
   cursor: pointer;
 }
 
-.feedback-form button:hover {
+.feedback-form button:hover,
+.feedback-form button:focus {
   box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.3);
 }
 
@@ -709,6 +714,11 @@ img {
   color: #000;
 }
 
+.confidentiality:hover,
+.confidentiality:focus {
+  border-bottom: solid 1px;
+}
+
 .info {
   display: flex;
   flex-direction: row;
@@ -719,7 +729,7 @@ img {
 }
 
 .footer-contacts img {
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 
 .social-buttons {
@@ -728,33 +738,34 @@ img {
   margin: 0;
   padding: 0;
   align-items: flex-end;
-  margin-top: 53px;
+  margin-top: 48px;
 }
 
 .social-buttons a {
   display: block;
   height: 26px;
+  width: 45px;
   opacity: 0.5;
+  outline: none;
   cursor: pointer;
 }
 
+.social-buttons a:focus,
 .social-buttons a:hover {
   opacity: 1;
 }
 
-.social-buttons li:first-child a {
+.social-vk {
   width: 65px;
-  background: url("../img/vk.png") 0 0 no-repeat;
+  background: url("../img/vk.png") 0% 50% no-repeat;
 }
 
-.social-buttons li:nth-child(2) a {
-  width: 57px;
-  background: url("../img/tw.png") 0 0 no-repeat;
+.social-tw {
+  background: url("../img/tw.png") 100% 50% no-repeat;
 }
 
-.social-buttons li:last-child a {
-  width: 14px;
-  background: url("../img/fb.png") 0 0 no-repeat;
+.social-fb {
+  background: url("../img/fb.png") 100% 50% no-repeat;
 }
 
 .coordinates {
@@ -768,6 +779,11 @@ img {
 
 .coordinates a {
   color: #fff;
+}
+
+.coordinates a:hover,
+.coordinates a:focus {
+  opacity: 0.6;
 }
 
 .address {
