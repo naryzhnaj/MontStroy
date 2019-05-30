@@ -727,12 +727,12 @@ img {
   display: flex;
   margin: 0;
   padding: 0;
+  align-items: flex-end;
   margin-top: 53px;
 }
 
 .social-buttons a {
   display: block;
-  width: 45px;
   height: 26px;
   opacity: 0.5;
   cursor: pointer;
@@ -743,14 +743,17 @@ img {
 }
 
 .social-buttons li:first-child a {
+  width: 65px;
   background: url("../img/vk.png") 0 0 no-repeat;
 }
 
 .social-buttons li:nth-child(2) a {
+  width: 57px;
   background: url("../img/tw.png") 0 0 no-repeat;
 }
 
 .social-buttons li:last-child a {
+  width: 14px;
   background: url("../img/fb.png") 0 0 no-repeat;
 }
 
@@ -782,21 +785,6 @@ img {
   background: url("../img/address.svg") no-repeat 0 0;
 }
 
-.phone {
-  position: relative;
-  font-weight: 700;
-}
-
-.phone::before {
-  position: absolute;
-  left: -30px;
-  top: 7px;
-  content: "";
-  width: 13px;
-  height: 12px;
-  background: url("../img/phone.svg") no-repeat 0 0;
-}
-
 .mail {
   position: relative;
   font-weight: 700;
@@ -813,9 +801,31 @@ img {
   background: url("../img/letter.svg") no-repeat 0 0;
 }
 
+.phone {
+  position: relative;
+  font-weight: 700;
+}
+
+.phone::before {
+  position: absolute;
+  left: -30px;
+  top: 7px;
+  content: "";
+  width: 13px;
+  height: 12px;
+  background: url("../img/phone.svg") no-repeat 0 0;
+}
+
+.phone a {
+  display: block;
+  margin-bottom: -16px;
+}
+
 .hours {
   font-size: 13px;
   line-height: 45px;
+  opacity: 0.6;
+  font-weight: 400;
 }
 
 .copyright {
