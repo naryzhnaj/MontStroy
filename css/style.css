@@ -5,6 +5,7 @@
   font-weight: 900;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'Raleway';
   src: url('../fonts/ralewaybold.woff2') format('woff2'),
@@ -20,6 +21,7 @@
   font-weight: 400;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'Roboto-font';
   src: url('../fonts/robotomedium.woff2') format('woff2'),
@@ -27,6 +29,7 @@
   font-weight: 500;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'Roboto-font';
   src: url('../fonts/robotobold.woff2') format('woff2'),
@@ -34,6 +37,7 @@
   font-weight: 700;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'Roboto-font';
   src: url('../fonts/robotoblack.woff2') format('woff2'),
@@ -137,9 +141,11 @@ img {
   letter-spacing: 0.6px;
   color: #707070;
 }
+
 .site-navigation a[href]:hover {
   color: #000;
 }
+
 .site-navigation a:last-child {
   margin-right: 0;
 }
@@ -160,6 +166,7 @@ img {
 .contacts .btn {
   margin-left: 24px;
 }
+
 .contacts .btn:hover {
   box-shadow: 0px 2px 4.75px 0.25px rgba(0, 255, 216, 0.6);
 }
@@ -211,6 +218,7 @@ img {
   font-weight: 900;
   padding: 8px 80px;
 }
+
 .contact-buttons .btn:hover {
   box-shadow: 0px 2px 6.3px 0.7px rgba(0, 255, 216, 0.65);
 }
@@ -447,6 +455,7 @@ img {
   opacity: 0.34;
   border: solid 2px #fff;
 }
+
 .btn-arrow:hover {
   color: #000;
   background-color: #00ffd8;
@@ -475,18 +484,23 @@ img {
 .project-1 {
   background-image: url("../img/project1.jpg");
 }
+
 .project-2 {
   background-image: url("../img/project2.jpg");
 }
+
 .project-3 {
   background-image: url("../img/project3.jpg");
 }
+
 .project-4 {
   background-image: url("../img/project4.jpg");
 }
+
 .project-5 {
   background-image: url("../img/project5.jpg");
 }
+
 .project-6 {
   background-image: url("../img/project6.jpg");
 }
@@ -542,6 +556,7 @@ img {
 .prev {
   position: relative;
 }
+
 .prev::after {
   position: absolute;
   left: 55px;
@@ -564,6 +579,7 @@ img {
 .slider li {
   opacity: 0.5;
 }
+
 .slider li:hover {
   opacity: 1;
 }
@@ -592,6 +608,7 @@ img {
 
 .feedback {
   position: absolute;
+  z-index: 9;
   left: 50%;
   margin-left: -290px;
   bottom: 134px;
@@ -632,7 +649,11 @@ img {
   outline: none;
 }
 
-.feedback-form input:focus, .feedback-form input:hover {
+.feedback-form input:focus {
+  opacity: 1;
+} 
+
+.feedback-form input:hover {
   opacity: 1;
 }
 
@@ -663,7 +684,9 @@ img {
   font-weight: 700;
   background-color: #000;
   color: #fff;
+  cursor: pointer;
 }
+
 .feedback-form button:hover {
   box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.3);
 }
@@ -707,30 +730,27 @@ img {
   margin-top: 53px;
 }
 
-.social-buttons li {
+.social-buttons a {
   display: block;
-  margin-right: 30px;
+  width: 45px;
+  height: 26px;
   opacity: 0.5;
+  cursor: pointer;
 }
-.social-buttons li:hover {
+
+.social-buttons a:hover {
   opacity: 1;
 }
 
-.social-buttons li:first-child {
-  width: 35px;
-  height: 21px;
+.social-buttons li:first-child a {
   background: url("../img/vk.png") 0 0 no-repeat;
 }
 
-.social-buttons li:nth-child(2) {
-  width: 27px;
-  height: 22px;
+.social-buttons li:nth-child(2) a {
   background: url("../img/tw.png") 0 0 no-repeat;
 }
 
-.social-buttons li:last-child {
-  width: 14px;
-  height: 26px;
+.social-buttons li:last-child a {
   background: url("../img/fb.png") 0 0 no-repeat;
 }
 
@@ -743,10 +763,15 @@ img {
   line-height: 26px;
 }
 
+.coordinates a {
+  color: #fff;
+}
+
 .address {
   position: relative;
   margin-bottom: 44px;
 }
+
 .address::before {
   position: absolute;
   left: -29px;
@@ -760,12 +785,12 @@ img {
 .phone {
   position: relative;
   font-weight: 700;
-  margin-bottom: -15px;
 }
+
 .phone::before {
   position: absolute;
   left: -30px;
-  bottom: 6px;
+  top: 7px;
   content: "";
   width: 13px;
   height: 12px;

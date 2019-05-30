@@ -198,7 +198,7 @@
     <footer class="main-footer">
       <section id="write_us" class="feedback">
         <h2>свяжитесь с нами</h2>
-        <form class="feedback-form">
+        <form class="feedback-form" action="#" method="post">
           <div class="user-name">
             <label>Имя<input type="text" name="name" required></label>
             <label>Телефон<input type="tel" name="phone" required></label>
@@ -215,7 +215,7 @@
         <section class="info">
           <h2 class="visually-hidden">контакты</h2>
           <div class="footer-contacts">
-            <img src="img/logo.png" width="141" height="60" alt="Логотип MontStroy">
+            <a><img src="img/logo.png" width="141" height="60" alt="Логотип MontStroy"></a>
             <p>ЗАО «НCП «МонтCтрой»</p>
             <ul class="social-buttons">
               <li><a href="#" aria-label="Вконтакте"></a></li>
@@ -225,9 +225,10 @@
           </div>
           <ul class="coordinates">
             <li class="address">Варшавское шоссе, д,118,&nbsp;к.1&nbsp;Бизнес-центр «ВАРШАВКА Sky»</li>
-            <li class="mail">zao@montstroy.ru</li>
-            <li class="phone">+7 (495) 452-67-23</li>
-            <li class="hours">Ежедневно с 9:00 до 18:00</li>
+            <li class="mail"><a href="mailto:zao@montstroy.ru">zao@montstroy.ru</a></li>
+            <li class="phone"><a href="tel:+74954526723">+7 (495) 452-67-23</a>
+              <span class="hours">Ежедневно с 9:00 до 18:00</span>
+            </li>
           </ul>
         </section>
       </div>
