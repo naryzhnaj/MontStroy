@@ -128,14 +128,14 @@ img {
 .site-navigation {
   justify-content: space-between;
   margin-left: 57px;
-  margin-right: 250px;
-  width: 345px;
+  margin-right: 205px;
+  width: 390px;
 }
 
 .site-navigation a {
   display: block;
-  margin-top: 20px;
-  font-size: 10px;
+  margin-top: 18px;
+  font-size: 12px;
   font-weight: 500;
   line-height: 20px;
   text-transform: uppercase;
@@ -181,6 +181,7 @@ img {
   margin-bottom: 100px;
   color: #fff;
   background-color: #141414;
+  background-size: cover;
   background: linear-gradient(to top, rgba(13,13,13,1) 0%, rgba(13,13,13,0) 470px),
               url("../img/welding.jpg") 50% 100% no-repeat;
 }
