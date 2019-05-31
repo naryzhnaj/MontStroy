@@ -180,10 +180,10 @@ img {
   padding-bottom: 80px;
   margin-bottom: 100px;
   color: #fff;
-  background-color: #141414;
-  background-size: cover;
   background: linear-gradient(to top, rgba(13,13,13,1) 0%, rgba(13,13,13,0) 470px),
               url("../img/welding.jpg") 50% 100% no-repeat;
+  background-color: #141414;
+  background-size: cover;
 }
 
 .advantages h1 {
@@ -648,14 +648,13 @@ img {
   width: 400px;
   margin-bottom: 47px;
   border: none;
-  border-bottom: solid 1px #000;
-  opacity: 0.5;
+  border-bottom: solid 1px rgba(0, 0, 0, 0.5);
   outline: none;
 }
 
 .feedback-form input:focus,
 .feedback-form input:hover {
-  opacity: 1;
+  border-color: #000;
 }
 
 .user-name {
@@ -703,7 +702,7 @@ img {
   font-size: 12px;
   line-height: 18px;
   font-weight: 400;
-  opacity: 0.5;
+  opacity: 0.6;
   text-align: center;
 }
 
@@ -857,6 +856,6 @@ img {
   margin-left: -150px;
   font-size: 10px;
   line-height: 25px;
-  opacity: 0.25;
+  opacity: 0.5;
   letter-spacing: 0.4px;
 }
