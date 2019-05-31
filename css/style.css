@@ -602,11 +602,6 @@ img {
   background: url("../img/map.png") 0 0 no-repeat;
 }
 
-.map iframe {
-  width: 100%;
-  border: none;
-}
-
 .main-footer {
   position: relative;
   height: 465px;
